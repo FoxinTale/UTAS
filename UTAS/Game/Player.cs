@@ -12,6 +12,6 @@ namespace UTAS
         private Animation rightAnim;
         private Animation upAnim;
         private Animation downAnim;
-        
+        private Animation idleAnim;
     }
 }
