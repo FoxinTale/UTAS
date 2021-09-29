@@ -4,12 +4,28 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeBed1.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeBed2.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_homebed3.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeExt.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeHallway.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeKitchen.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeMainEnt.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeSide.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_down.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_left.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_right.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_up.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

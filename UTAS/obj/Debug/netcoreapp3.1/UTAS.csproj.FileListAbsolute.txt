@@ -54,3 +54,11 @@ C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\obj\Debug\netcoreapp3.1\UTAS.csproj.C
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\obj\Debug\netcoreapp3.1\UTAS.dll
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\obj\Debug\netcoreapp3.1\UTAS.pdb
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\obj\Debug\netcoreapp3.1\UTAS.genruntimeconfig.cache
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeBed1.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeBed2.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_homebed3.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeExt.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeHallway.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeKitchen.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeMainEnt.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeSide.xnb
