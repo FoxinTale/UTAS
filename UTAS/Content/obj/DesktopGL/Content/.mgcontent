@@ -4,6 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Music/mus_home_remix.wma</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeBed1.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeBed2.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_homebed3.png</File>
@@ -12,12 +13,47 @@
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeKitchen.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeMainEnt.png</File>
     <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Rooms/New Home/bg_HomeSide.png</File>
-    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_down.png</File>
-    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_left.png</File>
-    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_right.png</File>
-    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Asriel/spr_asrielkid_up.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_battlestart.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_blip.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_dust.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_encounter.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_flicker.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_heartshatter.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_heartsplit.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_hit.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_hurt.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_savepoint.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_select.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_swipe.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_swipe2.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_text.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_voice_asriel.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_voice_toriel.wav</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid_down.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid_idle.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid_left.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid_right.png</File>
+    <File>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid_up.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

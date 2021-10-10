@@ -1,24 +1,40 @@
-using System;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+// https://www.dreamincode.net/forums/topic/194878-xna-animated-sprite/
 
 namespace UTAS
 {
-    class Player
+    class Player : Sprite
     {
-        //private Animation leftAnim;
-        //private Animation rightAnim;
-        //private Animation upAnim;
-       // private Animation downAnim;
-     //   private Animation idleAnim;
-        
-        
-        
-        public void LoadContent()
+        private Vector2 velocity = new Vector2(0, 0);
+        private float speed = 4;
+        public Player(string texSource) : base(texSource){}
+
+
+        public override void Update(GameTime gt)
         {
-         //   rightAnim = new Animation(Load<Texture2D>("Sprites/Asriel/spr_asrielkid_right"), 0.25f, true);
+            KeyboardState kstate = Keyboard.GetState();
+            if (kstate.IsKeyDown(Keys.Up))
+            {
+                velocity.Y = -speed;
+            }
+            else if (kstate.IsKeyDown(Keys.Down))
+            {
+                velocity.Y = speed;
+            }
+
+            if (kstate.IsKeyDown(Keys.Left))
+            {
+                velocity.X = - speed;
+            }
+            else if (kstate.IsKeyDown(Keys.Right))
+            {
+                velocity.X = speed;
+            }
+
+            pos += velocity;
+            velocity = Vector2.Zero;
+        
         }
     }
 }

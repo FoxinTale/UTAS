@@ -26,10 +26,6 @@ C:\Users\Aubrey\RiderProjects\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\
 C:\Users\Aubrey\RiderProjects\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_left.xnb
 C:\Users\Aubrey\RiderProjects\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_right.xnb
 C:\Users\Aubrey\RiderProjects\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_up.xnb
-C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_down.xnb
-C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_left.xnb
-C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_right.xnb
-C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Asriel\spr_asrielkid_up.xnb
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\UTAS.exe
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\UTAS.deps.json
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\UTAS.runtimeconfig.json
@@ -62,3 +58,26 @@ C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeKitchen.xnb
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeMainEnt.xnb
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Rooms\New Home\bg_HomeSide.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_battlestart.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_blip.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_dust.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_encounter.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_flicker.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_heartshatter.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_heartsplit.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_hit.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_hurt.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_savepoint.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_select.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_swipe.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_swipe2.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_text.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_voice_asriel.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sound\snd_voice_toriel.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_down.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_left.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_right.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_up.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_idle.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_home_remix.ogg
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_home_remix.xnb
