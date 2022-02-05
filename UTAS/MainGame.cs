@@ -10,10 +10,7 @@ namespace UTAS
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-      //  bool isPaused = false;
-        
         Texture2D home;
-    
         private Player asriel;
    
         public MainGame()
@@ -29,12 +26,12 @@ namespace UTAS
             Window.Title = "Undertale: Asriel's Story";
             this.Content.RootDirectory = "Content";
             
-            _graphics.PreferredBackBufferHeight = 768;
-            _graphics.PreferredBackBufferWidth = 1280;
+            _graphics.PreferredBackBufferHeight = 768; // 768
+            _graphics.PreferredBackBufferWidth = 1280; // 1280
             _graphics.ApplyChanges();
             asriel = new Player("Sprites\\Characters\\Asriel\\spr_asrielkid_idle");
-            
             base.Initialize();
+            asriel.Initialize();
         }
 
         protected override void LoadContent()
@@ -79,11 +76,8 @@ namespace UTAS
             _spriteBatch.Draw(home, new Rectangle(_graphics.PreferredBackBufferWidth / 4, _graphics.PreferredBackBufferHeight /  4, 
                 home.Width * 2, home.Height * 2), Color.White); 
             
-            
             asriel.draw(_spriteBatch);
-            
             _spriteBatch.End();
-
             base.Draw(gameTime);
         }
     }
