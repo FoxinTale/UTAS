@@ -81,3 +81,11 @@ C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprit
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid_idle.xnb
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_home_remix.ogg
 C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_home_remix.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_game_intro.ogg
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_game_intro.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_death.ogg
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Music\mus_death.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Battle\spr_gameover_0.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Battle\spr_heartcrack_0.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Battle\spr_heartcrack_1.xnb
+C:\Users\Aubrey\Documents\GitHub\UTAS\UTAS\bin\Debug\netcoreapp3.1\Content\Sprites\Characters\Asriel\spr_asrielkid.xnb
