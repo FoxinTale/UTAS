@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sprites/Characters/Asriel/spr_asrielkid.png</SourceFile>
-  <SourceTime>2022-02-07T18:59:52.8472903-05:00</SourceTime>
+  <SourceTime>2022-02-08T12:10:53.5470974-05:00</SourceTime>
   <DestFile>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/bin/DesktopGL/Sprites/Characters/Asriel/spr_asrielkid.xnb</DestFile>
-  <DestTime>2022-02-07T19:00:49.8753654-05:00</DestTime>
+  <DestTime>2022-02-08T12:35:49.1056731-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T12:17:54-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

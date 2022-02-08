@@ -3,7 +3,7 @@
   <SourceFile>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/Sound/snd_encounter.wav</SourceFile>
   <SourceTime>2017-01-16T01:13:24-05:00</SourceTime>
   <DestFile>C:/Users/Aubrey/Documents/GitHub/UTAS/UTAS/Content/bin/DesktopGL/Sound/snd_encounter.xnb</DestFile>
-  <DestTime>2022-02-07T19:00:41.7819002-05:00</DestTime>
+  <DestTime>2022-02-08T12:35:40.7374822-05:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2020-08-10T12:17:54-04:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

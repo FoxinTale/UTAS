@@ -2,143 +2,230 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-// https://www.dreamincode.net/forums/topic/194878-xna-animated-sprite/
+// Source = https://www.dreamincode.net/forums/topic/194878-xna-animated-sprite/
 
 namespace UTAS
 {
-    class Player : Sprite
+    class Player
     {
-        private Vector2 velocity = new Vector2(0, 0);
-        public Vector2 playerPosition;
-        private float speed = 4;
-        public float health = 20;
-        public Texture2D playerSpritesheet;
-        public Rectangle[,] playerSpriteCuts;
-        public Player(string texSource) : base(texSource){}
-        public bool canMove = true;
-        private bool notIdle = true;
-        public bool direction;
-        public Point currentSprite;
-        int priorX;
-        double lastAnimate;
-
-        public void Initialize(GraphicsDeviceManager _graphics)
-        { 
-            direction = true;
-            currentSprite = new Point(0, 0);
-            playerPosition = new Vector2(_graphics.PreferredBackBufferWidth/2 - 9, _graphics.PreferredBackBufferHeight/2 - 14);
-            playerSpriteCuts = new Rectangle[,] { 
-                {
-                    new Rectangle(0, 0, 18, 28), 
-                    new Rectangle(18, 0, 18, 28), 
-                    new Rectangle( 36, 0, 18, 28), 
-                    new Rectangle( 54, 0, 18, 28) 
-                }, {
-                    new Rectangle(0, 28, 18, 28), 
-                    new Rectangle(18, 28, 18, 28),
-                    new Rectangle(-1, -1, 0, 0),
-                    new Rectangle(-1, -1, 0, 0)
-                }, {
-                    new Rectangle(0, 56, 18, 28), 
-                    new Rectangle(18, 56, 18, 28),
-                    new Rectangle(-1, -1, 0, 0),
-                    new Rectangle(-1, -1, 0, 0)
-                },{
-                    new Rectangle(0, 84, 18, 28), 
-                    new Rectangle(18,  84, 18, 28), 
-                    new Rectangle( 36, 84, 18, 28), 
-                    new Rectangle( 54, 84,  18, 28)
-                },
-            };
-
-        }
-        public override void Update(GameTime gt)
+        //private float playerHealth = 20;
+        
+        Texture2D spriteTexture;
+        float timer = 0f;
+        float interval = 200f;
+        int currentFrame = 0;
+        int spriteWidth = 32;
+        int spriteHeight = 48;
+        int spriteSpeed = 2;
+        Rectangle sourceRect;
+        Vector2 position;
+        Vector2 origin;
+        KeyboardState currentKBState;
+        KeyboardState previousKBState;
+        
+        public Player(Texture2D texture, int currentFrame, int spriteWidth, int spriteHeight)
         {
-            KeyboardState kstate = Keyboard.GetState();
+            this.spriteTexture = texture;
+            this.currentFrame = currentFrame;
+            this.spriteWidth = spriteWidth;
+            this.spriteHeight = spriteHeight;
+        }
+        
+        public void HandleSpriteMovement(GameTime gameTime)
+        {
+            previousKBState = currentKBState;
+            currentKBState = Keyboard.GetState();
 
-            if (canMove)
+            sourceRect = new Rectangle(currentFrame * spriteWidth, 0, spriteWidth, spriteHeight);
+
+            if (currentKBState.GetPressedKeys().Length == 0) // This is for setting the idle frame!
             {
-                if (kstate.IsKeyDown(Keys.Up) || kstate.IsKeyDown(Keys.W) || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y > 0)
+                if (currentFrame > 0 && currentFrame < 4)
                 {
-                   // velocity.Y = -speed;
-                   currentSprite.X = 0;
-                  // cameraPosition.Y += 2.5f;
-                   notIdle = true;
+                    currentFrame = 0;
                 }
-                else if (kstate.IsKeyDown(Keys.Down) || kstate.IsKeyDown(Keys.S) || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y < 0)
+                if (currentFrame > 4 && currentFrame < 8)
                 {
-                   // velocity.Y = speed;
-                   currentSprite.X = 0;
-               //    cameraPosition.Y -= 2.5f;
-                   notIdle = true;
+                    currentFrame = 4;
                 }
-
-                if (kstate.IsKeyDown(Keys.Left) || kstate.IsKeyDown(Keys.A) || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X < 0)
+                if (currentFrame > 8 && currentFrame < 12)
                 {
-                  //  velocity.X = - speed;
-                  currentSprite.X = 0;
-                  // cameraPosition.X += 2.5f;
-                  direction = true;
-                  notIdle = true;
+                    currentFrame = 8;
                 }
-                else if (kstate.IsKeyDown(Keys.Right) || kstate.IsKeyDown(Keys.D) || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X > 0)
+                if (currentFrame > 12 && currentFrame < 16)
                 {
-                   // velocity.X = speed;
-                   currentSprite.X = 0;
-                 //  cameraPosition.X -= 2.5f;
-                   direction = false;
-                   notIdle = true;
+                    currentFrame = 12;
                 }
-                if (!notIdle)
-                {
-                    currentSprite.X = 4;
-                }
-                if (priorX != currentSprite.X)
-                {
-                    currentSprite.Y = 0;
-                    lastAnimate = gt.TotalGameTime.TotalMilliseconds;
-                }
-                else if (gt.TotalGameTime.TotalMilliseconds - lastAnimate > 60)
-                {
-                    if (currentSprite.Y < 9 && playerSpriteCuts[currentSprite.X, currentSprite.Y].X != -1)
-                        currentSprite.Y += 1;
-                    else
-                        currentSprite.Y = 0;
-                    if (currentSprite.X == 2 && currentSprite.Y == 4)
-                    {
-
-                        if (Keyboard.GetState().IsKeyDown(Keys.E) || GamePad.GetState(PlayerIndex.One).Buttons.LeftShoulder == ButtonState.Pressed)
-                        {
-                            currentSprite.Y = 0;
-                            currentSprite.X = 3;
-                        }
-                        else
-                        {
-                            currentSprite.Y = 0;
-                            currentSprite.X = 4;
-                            canMove = false;
-                        }
-                    }
-                    if (currentSprite.X == 3 && currentSprite.Y == 5)
-                    {
-                        currentSprite.Y = 0;
-                        currentSprite.X = 4;
-                        canMove = false;
-                    }
-                    lastAnimate = gt.TotalGameTime.TotalMilliseconds;
-                }
-
-                priorX = currentSprite.X;
-
-               pos += velocity;
-               // velocity = Vector2.Zero;
-
             }
 
-            if (kstate.IsKeyDown(Keys.L))
+            // This check is a little bit I threw in there to allow the character to sprint.
+            if (currentKBState.IsKeyDown(Keys.Space))
             {
-                health = 0;
+                spriteSpeed = 3;
+                interval = 100;
             }
+            else
+            {
+                spriteSpeed = 2;
+                interval = 200;
+            }
+
+            if (currentKBState.IsKeyDown(Keys.Right) || currentKBState.IsKeyDown(Keys.D) ||  GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X > 0)
+            {
+                AnimateRight(gameTime);
+                if (position.X < 1280) // 780
+                {
+                    position.X += spriteSpeed;
+                }
+            }
+
+            if (currentKBState.IsKeyDown(Keys.Left) || currentKBState.IsKeyDown(Keys.A) /*|| GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X < 0*/)
+            {
+                AnimateLeft(gameTime);
+                if (position.X > 20)
+                {
+                    position.X -= spriteSpeed;
+                }
+            }
+
+            if (currentKBState.IsKeyDown(Keys.Down) || currentKBState.IsKeyDown(Keys.S) /*|| GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y < 0*/ )
+            {
+                AnimateDown(gameTime);
+                if (position.Y < 640) // 575
+                {
+                    position.Y += spriteSpeed;
+                }
+            }
+
+            if (currentKBState.IsKeyDown(Keys.Up) || currentKBState.IsKeyDown(Keys.W) || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y > 0)
+            {
+                AnimateUp(gameTime);
+                if (position.Y > 25)
+                {
+                    position.Y -= spriteSpeed;
+                }
+            }
+
+            origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+        }
+        
+        
+        public void AnimateUp(GameTime gameTime)
+        {
+            if (currentKBState != previousKBState)
+            {
+                currentFrame = 13;
+            }
+
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timer > interval)
+            {
+                currentFrame++;
+
+                if (currentFrame > 15)
+                {
+                    currentFrame = 12;
+                }
+                timer = 0f;
+            }
+        }
+
+        
+        
+        public void AnimateDown(GameTime gameTime)
+        {
+            if (currentKBState != previousKBState)
+            {
+                currentFrame = 1;
+            }
+
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timer > interval)
+            {
+                currentFrame++;
+
+                if (currentFrame > 3)
+                {
+                    currentFrame = 0;
+                }
+                timer = 0f;
+            }
+        }
+        
+        public void AnimateLeft(GameTime gameTime)
+        {
+            if (currentKBState != previousKBState)
+            {
+                currentFrame = 5;
+            }
+
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timer > interval)
+            {
+                currentFrame++;
+
+                if (currentFrame > 7)
+                {
+                    currentFrame = 4;
+                }
+                timer = 0f;
+            }
+        }
+        
+        public void AnimateRight(GameTime gameTime)
+        {
+            if (currentKBState != previousKBState)
+            {
+                currentFrame = 9;
+            }
+
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timer > interval)
+            {
+                currentFrame++;
+		
+                if (currentFrame > 11)
+                {
+                    currentFrame = 8;
+                }
+                timer = 0f;
+            }
+        }
+        
+        
+        // Getters and Setters.
+        public Vector2 Position
+        {
+            get { return position; }
+            set { position = value; }
+        }
+
+        public Vector2 Origin
+        {
+            get { return origin; }
+            set { origin = value; }
+        }
+
+        public Texture2D Texture
+        {
+            get { return spriteTexture; }
+            set { spriteTexture = value; }
+        }
+
+        public Rectangle SourceRect
+        {
+            get { return sourceRect; }
+            set { sourceRect = value; }
+        }
+        
+        public float playerHealth
+        {
+            get { return playerHealth; }
+            set { playerHealth = value; }
         }
         
     }
